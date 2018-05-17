@@ -80,5 +80,21 @@ Convert training data into proper format
 
 Extract character vocabulary
 ----------------------------
-  ``python -m tfdsyllab.vocab ./``
+  ``python -m tfdsyllab.vocab .``
+
+
+Train and export model
+----------------------
+  ``python -m tfdsyllab.train . model -export_path export``
+
+
+Use detector
+------------
+  ``
+  from tfdsyllab.detect import SyllablesDetector
+  detector = SyllablesDetector(exported_model_dir)
+  result = detector.detect([u'привет', u'пока', u'японо-российский'])
+  print(result)
+  ``
+
 
