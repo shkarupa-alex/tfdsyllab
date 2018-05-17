@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='tfdsyllab',
-    version='0.1',
+    version='1.0.0',
     description='Deep word syllables model implemented with Tensorflow',
     url='https://github.com/shkarupa-alex/tfdsyllab',
     author='Shkarupa Alex',
